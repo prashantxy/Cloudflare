@@ -13,6 +13,13 @@ app.get('/', c => {
 
 //add a simple post request
 
+app.post('/', async c =>{
+	const body = c.req.json();
+	const name = body.name;
+	const price = body.price;
+	return c.json(`Created Product ${name} with price ${price}`)
+})
+
 
 export default app;
 
