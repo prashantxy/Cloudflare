@@ -21,6 +21,11 @@ app.post('/',async c=>{
 	return c.json(`the name is ${name} and the price is ${price}`);
 })
 
+app.post('/check',async c =>{
+	return c.json(`checking`);
+})
+
+
 //export the app
 export default app;
 
